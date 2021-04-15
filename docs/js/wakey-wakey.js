@@ -31,5 +31,5 @@ buttonDOM.addEventListener('click', () => {
         number.textContent = 25;
       }
     }
-  }, 1000);
+  }, 60000); // Timer change number every 60000 millisec (1 minute)
 });

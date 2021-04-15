@@ -19,11 +19,11 @@ gulp.task('watch', (a) => {
 
 gulp.task('prod-move', (a) => {
   // HTML
-  gulp.src('./src/*.html').pipe(gulp.dest('./dist/'));
+  gulp.src('./src/*.html').pipe(gulp.dest('./docs/'));
   // CSS
-  gulp.src('./src/css/*.css').pipe(cleanCSS({compatibility: 'ie8'})).pipe(gulp.dest('./dist/css'));
+  gulp.src('./src/css/*.css').pipe(cleanCSS({compatibility: 'ie8'})).pipe(gulp.dest('./docs/css'));
   // JS
-  gulp.src('./src/js/*.js').pipe(gulp.dest('./dist/js'));
+  gulp.src('./src/js/*.js').pipe(gulp.dest('./docs/js'));
   a();
 });
 
