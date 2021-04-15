@@ -1,1 +1,72 @@
-body{margin:0;background-color:#373737}.flex-container{display:flex;justify-content:center;align-items:center}.container{max-width:400px}.hero__heading{margin:0;font-size:3rem;color:#ddd}
+body {
+  margin: 0;
+  background-color: #373737;
+  font-family: 'Ubuntu', sans-serif; }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.container {
+  max-width: 400px;
+  z-index: 0;
+  display: block; }
+
+.container-upper {
+  transition: all 0.2s;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #373737;
+  z-index: 1; }
+
+.hero__heading {
+  text-decoration: underline;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  color: #dddddd; }
+
+.hero__under-heading {
+  text-align: center;
+  color: #e7e7e7; }
+
+.hero__text {
+  text-align: center;
+  color: #919191;
+  margin: 1rem 0 2rem 0; }
+
+.hero__go {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 100px;
+  background-color: #474747;
+  outline: none;
+  border: none;
+  color: #dddddd;
+  font-size: 3rem;
+  border-radius: 10px;
+  transition: all 0.1s; }
+
+.hero__go:active {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0); }
+
+.upper__count-number {
+  margin: 0;
+  font-size: 80vh;
+  color: #e7e7e7;
+  text-align: center;
+  cursor: default;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
