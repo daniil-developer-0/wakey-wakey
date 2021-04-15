@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const cleancss = require('gulp-clean-css');
+const cleanCSS = require('gulp-clean-css');
 
 sass.compiler = require('node-sass');
 
@@ -24,7 +24,7 @@ gulp.task('prod-move', (a) => {
   gulp.src('./src/css/*.css').pipe(cleanCSS({compatibility: 'ie8'})).pipe(gulp.dest('./dist/css'));
   // JS
   gulp.src('./src/js/*.js').pipe(gulp.dest('./dist/js'));
-  return a;
+  a();
 });
 
 exports.watch = 'watch';
