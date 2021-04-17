@@ -12,7 +12,8 @@ body {
 .container {
   max-width: 400px;
   z-index: 0;
-  display: block; }
+  display: block;
+  margin: 0 10px; }
 
 .container-upper {
   transition: all 0.2s;
@@ -55,7 +56,7 @@ body {
   font-size: 3rem;
   border-radius: 10px;
   transition: all 0.1s;
-  margin: 0 10px;
+  box-sizing: border-box;
   padding: 4% 0; }
 
 .hero__go:active {
